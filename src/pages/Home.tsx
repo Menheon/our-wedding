@@ -1,7 +1,7 @@
 import { useCountdown } from '../hooks/useCountdown'
 
 export const Home = () => {
-  const weddingDate = new Date("2026-05-30T16:00:00+02:00");
+  const weddingDate = new Date("2026-05-30T14:00:00+02:00");
   const address = "Topkær Fest • Topkærvej 13, 8200 Århus N";
   const timeRemaining = useCountdown(weddingDate);
 
@@ -45,23 +45,25 @@ export const Home = () => {
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 Ceremony
               </h3>
-              <p className="text-gray-600">4:00 PM</p>
-              <p className="text-gray-600">Garden Pavilion</p>
+              <p className="text-gray-600">
+                2:00 PM
+              </p>
+              <p className="text-gray-600">Topkær Forest</p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">🥂</div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 Reception
               </h3>
-              <p className="text-gray-600">6:00 PM</p>
-              <p className="text-gray-600">Grand Ballroom</p>
+              <p className="text-gray-600">3:00 PM</p>
+              <p className="text-gray-600">Main Cottage</p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">🏨</div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 Accommodation
               </h3>
-              <p className="text-gray-600">Napa Valley Inn</p>
+              <p className="text-gray-600">Four Points Flex by Sheraton Aarhus Skejby</p>
               <p className="text-gray-600">Group Rate Available</p>
             </div>
           </div>
@@ -102,7 +104,7 @@ export const Home = () => {
             Our Love Story
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            From our first coffee date to saying "yes" to forever, our journey
+            From our first bowling date to saying "yes" to forever, our journey
             has been filled with laughter, adventure, and endless love.
           </p>
           <button className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-full font-semibold transition-colors">
