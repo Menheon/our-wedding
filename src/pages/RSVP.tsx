@@ -2,50 +2,61 @@ export const RSVP = () => {
   const rsvpDate = new Date("2026-04-30T14:00:00+02:00");
 
   return (
-    <div className="py-16 px-4">
-      <div className="max-w-2xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-800 mb-6">RSVP</h1>
-          <p className="text-xl text-gray-600">
-            Please let us know if you'll be able to join us for our special day
-          </p>
-          <p className="text-lg text-rose-600 font-semibold mt-4">
-            Please respond by{" "}
-            {rsvpDate.toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
-          </p>
+    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-25 to-purple-50 py-20 px-6">
+      <div className="max-w-3xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-block mb-6">
+            <div className="w-20 h-0.5 bg-gradient-to-r from-transparent via-rose-400 to-transparent"></div>
+          </div>
+          <h1 className="text-6xl font-serif font-light text-gray-800 mb-8">
+            RSVP
+          </h1>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-2xl text-gray-700 font-light mb-6">
+              Please let us know if you'll be able to join us for our special
+              day
+            </p>
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-rose-200 shadow-lg">
+              <p className="text-lg text-rose-600 font-semibold">
+                Please respond by{" "}
+                {rsvpDate.toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-8">
-          <form className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-4">
+        <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-10 border border-rose-100">
+          <form className="space-y-8">
+            <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-semibold text-gray-700 mb-3 tracking-wide uppercase">
                   First Name *
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                  className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white shadow-sm"
                   required
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-semibold text-gray-700 mb-3 tracking-wide uppercase">
                   Last Name *
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-rose-500 focus:border-transparent"
+                  className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white shadow-sm"
                   required
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-semibold text-gray-700 mb-3 tracking-wide uppercase">
                 Email Address *
               </label>
               <input

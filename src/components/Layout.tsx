@@ -5,60 +5,64 @@ import { useLocation } from "@tanstack/react-router";
 
 export const Layout = () => {
   // Scroll to top on route change
-const location = useLocation();
+  const location = useLocation();
 
-useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
-}, [location.pathname]);
-
+  }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-25 to-purple-50">
       {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+      <nav className="bg-white/90 backdrop-blur-md shadow-lg border-b border-rose-100 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-5">
             <Link
               to="/"
-              className="text-2xl font-bold text-rose-600 hover:text-rose-700 transition-colors"
+              className="text-3xl font-serif font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent hover:from-rose-700 hover:to-pink-700 transition-all duration-300"
             >
-              Our Wedding
+              L & K
             </Link>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex space-x-10">
               <Link
                 to="/"
-                className="text-gray-700 hover:text-rose-600 transition-colors font-medium"
+                className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
                 Home
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 to="/our-story"
-                className="text-gray-700 hover:text-rose-600 transition-colors font-medium"
+                className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
                 Our Story
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 to="/gallery"
-                className="text-gray-700 hover:text-rose-600 transition-colors font-medium"
+                className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
                 Gallery
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 to="/rsvp"
-                className="text-gray-700 hover:text-rose-600 transition-colors font-medium"
+                className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
                 RSVP
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 to="/registry"
-                className="text-gray-700 hover:text-rose-600 transition-colors font-medium"
+                className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
                 Registry
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
                 to="/contact"
@@ -78,12 +82,20 @@ useEffect(() => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white/80 backdrop-blur-sm border-t border-rose-100 mt-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center text-gray-600">
-            <p className="text-lg font-medium text-rose-600 mb-2">
-              Join us in celebrating our special day
-            </p>
+      <footer className="bg-gradient-to-r from-rose-50 via-pink-50 to-purple-50 border-t border-rose-200 mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="text-center">
+            <div className="mb-6">
+              <h3 className="text-2xl font-serif font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent mb-3">
+                Lylian & Kasper
+              </h3>
+              <p className="text-lg font-medium text-gray-700 mb-2">
+                Join us in celebrating our special day
+              </p>
+              <p className="text-gray-600">
+                May 30, 2026 • Topkær Fest • Århus, Denmark
+              </p>
+            </div>
           </div>
         </div>
       </footer>

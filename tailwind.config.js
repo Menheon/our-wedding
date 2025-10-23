@@ -7,8 +7,21 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+        serif: ['Playfair Display', 'Georgia', 'serif'],
       },
+      colors: {
+        pink: {
+          25: '#fefcfb',
+        }
+      },
+      animation: {
+        'float': 'float 3s ease-in-out infinite',
+        'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite',
+      },
+      backdropBlur: {
+        'custom': '12px',
+      }
     },
   },
   plugins: [],
