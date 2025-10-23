@@ -1,7 +1,17 @@
 import { Outlet, Link } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
+import { useEffect } from "react";
+import { useLocation } from "@tanstack/react-router";
 
 export const Layout = () => {
+  // Scroll to top on route change
+const location = useLocation();
+
+useEffect(() => {
+    window.scrollTo(0, 0);
+}, [location.pathname]);
+
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-50 to-pink-50">
       {/* Navigation */}
@@ -74,7 +84,6 @@ export const Layout = () => {
             <p className="text-lg font-medium text-rose-600 mb-2">
               Join us in celebrating our special day
             </p>
-            <p className="text-sm">© 2024 Our Wedding Website. Made with ❤️</p>
           </div>
         </div>
       </footer>
