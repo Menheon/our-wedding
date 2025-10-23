@@ -1,4 +1,4 @@
-export const About = () => {
+export const OurStory = () => {
   return (
     <div className="py-16 px-4">
       <div className="max-w-4xl mx-auto">

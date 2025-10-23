@@ -108,7 +108,7 @@ export const Home = () => {
             From our first bowling date to saying "yes" to forever, our journey
             has been filled with laughter, adventure, and endless love.
           </p>
-          <Link to='/about' className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-full font-semibold transition-colors">
+          <Link to='/our-story' className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-full font-semibold transition-colors">
             Read Our Story
           </Link>
         </div>

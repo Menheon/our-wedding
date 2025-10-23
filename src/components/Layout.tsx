@@ -33,7 +33,7 @@ useEffect(() => {
                 Home
               </Link>
               <Link
-                to="/about"
+                to="/our-story"
                 className="text-gray-700 hover:text-rose-600 transition-colors font-medium"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
