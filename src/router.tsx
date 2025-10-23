@@ -1,8 +1,8 @@
 import { createRootRoute, createRoute, createRouter } from '@tanstack/react-router'
-import Layout from './components/Layout'
-import Home from './pages/Home'
-import About from './pages/About'
-import RSVP from './pages/RSVP'
+import {Layout} from './components/Layout'
+import {Home} from './pages/Home'
+import {About} from './pages/About'
+import {RSVP} from './pages/RSVP'
 
 // Create the root route
 const rootRoute = createRootRoute({

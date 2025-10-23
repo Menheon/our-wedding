@@ -1,4 +1,4 @@
-export default function RSVP() {
+export const RSVP = () => {
   return (
     <div className="py-16 px-4">
       <div className="max-w-2xl mx-auto">
@@ -129,12 +129,10 @@ export default function RSVP() {
             <p className="text-gray-700">
               📧 Email: rsvp@sarahandmichael2025.com
             </p>
-            <p className="text-gray-700">
-              📞 Phone: (555) 123-4567
-            </p>
+            <p className="text-gray-700">📞 Phone: (555) 123-4567</p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

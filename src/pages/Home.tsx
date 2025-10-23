@@ -1,4 +1,4 @@
-export default function Home() {
+export const Home = () => {
   return (
     <div>
       {/* Hero Section */}
@@ -31,19 +31,25 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">💍</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Ceremony</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Ceremony
+              </h3>
               <p className="text-gray-600">4:00 PM</p>
               <p className="text-gray-600">Garden Pavilion</p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">🥂</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Reception</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Reception
+              </h3>
               <p className="text-gray-600">6:00 PM</p>
               <p className="text-gray-600">Grand Ballroom</p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">🏨</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Accommodation</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Accommodation
+              </h3>
               <p className="text-gray-600">Napa Valley Inn</p>
               <p className="text-gray-600">Group Rate Available</p>
             </div>
@@ -85,8 +91,8 @@ export default function Home() {
             Our Love Story
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            From our first coffee date to saying "yes" to forever, 
-            our journey has been filled with laughter, adventure, and endless love.
+            From our first coffee date to saying "yes" to forever, our journey
+            has been filled with laughter, adventure, and endless love.
           </p>
           <button className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-full font-semibold transition-colors">
             Read Our Story
@@ -94,5 +100,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
