@@ -1,4 +1,6 @@
 export const RSVP = () => {
+  const rsvpDate = new Date("2026-04-30T14:00:00+02:00");
+
   return (
     <div className="py-16 px-4">
       <div className="max-w-2xl mx-auto">
@@ -8,7 +10,12 @@ export const RSVP = () => {
             Please let us know if you'll be able to join us for our special day
           </p>
           <p className="text-lg text-rose-600 font-semibold mt-4">
-            Please respond by April 15, 2025
+            Please respond by{" "}
+            {rsvpDate.toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
           </p>
         </div>
 
@@ -126,9 +133,7 @@ export const RSVP = () => {
             Having trouble with the form? You can also RSVP by:
           </p>
           <div className="space-y-2">
-            <p className="text-gray-700">
-              📧 Email: kasper.d.borg@gmail.com
-            </p>
+            <p className="text-gray-700">📧 Email: kasper.d.borg@gmail.com</p>
             <p className="text-gray-700">📞 Phone: +45 30 95 98 77</p>
           </div>
         </div>
