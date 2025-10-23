@@ -61,14 +61,6 @@ src/
 
 ### Content
 
-Update the following to customize for your wedding:
-
-1. **Names**: Change "Sarah & Michael" in `Home.tsx` and `About.tsx`
-2. **Date**: Update "June 15, 2025" in `Home.tsx`  
-3. **Venue**: Change "Garden Villa Estate • Napa Valley, CA" in `Home.tsx`
-4. **Story**: Customize the love story in `About.tsx`
-5. **RSVP Details**: Update contact info and deadline in `RSVP.tsx`
-
 ## 🛠 Technology Stack
 
 - **React 19**: Latest React with new features and optimizations

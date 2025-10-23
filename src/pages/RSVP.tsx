@@ -127,9 +127,9 @@ export const RSVP = () => {
           </p>
           <div className="space-y-2">
             <p className="text-gray-700">
-              📧 Email: rsvp@sarahandmichael2025.com
+              📧 Email: kasper.d.borg@gmail.com
             </p>
-            <p className="text-gray-700">📞 Phone: (555) 123-4567</p>
+            <p className="text-gray-700">📞 Phone: +45 30 95 98 77</p>
           </div>
         </div>
       </div>

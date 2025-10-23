@@ -14,7 +14,7 @@ export const OurStory = () => {
             <h2 className="text-3xl font-bold text-rose-600">How We Met</h2>
             <p className="text-gray-700 leading-relaxed">
               Our love story began on a rainy Tuesday morning in a small coffee
-              shop downtown. Sarah was reading her favorite book, and Michael
+              shop downtown. Lylian was reading her favorite book, and Kasper
               couldn't help but notice her smile when she reached the funny
               parts. After gathering the courage to approach her, what started
               as a conversation about books turned into hours of talking about
@@ -33,7 +33,7 @@ export const OurStory = () => {
           <div className="space-y-6 order-1 md:order-2">
             <h2 className="text-3xl font-bold text-rose-600">The Proposal</h2>
             <p className="text-gray-700 leading-relaxed">
-              After five wonderful years together, Michael knew Sarah was the
+              After five wonderful years together, Kasper knew Lylian was the
               one. He planned the perfect proposal during their annual trip to
               the mountains, at the same hiking trail where they had their first
               adventure together. As the sun set behind the peaks, he got down
@@ -52,7 +52,7 @@ export const OurStory = () => {
             can't wait to celebrate with all of you!
           </p>
           <div className="text-4xl mb-4">❤️</div>
-          <p className="text-rose-600 font-semibold text-lg">Sarah & Michael</p>
+          <p className="text-rose-600 font-semibold text-lg">Lylian & Kasper</p>
         </div>
       </div>
     </div>
