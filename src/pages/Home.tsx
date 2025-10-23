@@ -1,6 +1,9 @@
+import { useCountdown } from '../hooks/useCountdown'
+
 export const Home = () => {
   const weddingDate = new Date("2026-05-30T16:00:00+02:00");
   const address = "Topkær Fest • Topkærvej 13, 8200 Århus N";
+  const timeRemaining = useCountdown(weddingDate);
 
   return (
     <div>
@@ -73,19 +76,19 @@ export const Home = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-3xl font-bold text-rose-600">127</div>
+              <div className="text-3xl font-bold text-rose-600">{timeRemaining.days}</div>
               <div className="text-gray-600">Days</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-3xl font-bold text-rose-600">18</div>
+              <div className="text-3xl font-bold text-rose-600">{timeRemaining.hours}</div>
               <div className="text-gray-600">Hours</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-3xl font-bold text-rose-600">32</div>
+              <div className="text-3xl font-bold text-rose-600">{timeRemaining.minutes}</div>
               <div className="text-gray-600">Minutes</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-3xl font-bold text-rose-600">45</div>
+              <div className="text-3xl font-bold text-rose-600">{timeRemaining.seconds}</div>
               <div className="text-gray-600">Seconds</div>
             </div>
           </div>
