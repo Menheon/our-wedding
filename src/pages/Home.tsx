@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import ChapelSittingImg from "../assets/images/chapel-sitting.png";
 import { useCountdown } from "../hooks/useCountdown";
 
 export const Home = () => {
@@ -18,14 +19,16 @@ export const Home = () => {
           <div className="absolute bottom-40 left-1/3 w-80 h-80 bg-purple-200/30 rounded-full blur-xl animate-pulse delay-2000"></div>
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10"></div>
+        <img
+          src={ChapelSittingImg}
+          alt="Chapel Sitting"
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        />
 
-        <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+        <div className="relative z-10 text-center px-6 pb-6 max-w-5xl mx-auto">
           {/* Elegant Title */}
-          <div className="mb-8">
-            <div className="inline-block mb-4">
-              <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent mb-6"></div>
-            </div>
-            <h1 className="font-serif text-7xl md:text-9xl font-light text-white mb-4 tracking-wide drop-shadow-2xl">
+          <div className="my-8">
+            <h1 className="font-windsong font-bold text-7xl md:text-9xl font-light text-white mb-4 tracking-wide drop-shadow-2xl">
               Lylian
               <span className="block text-5xl md:text-7xl font-normal italic opacity-90 mt-2">
                 &
