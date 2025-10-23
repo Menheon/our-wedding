@@ -1,4 +1,7 @@
 export const Home = () => {
+  const weddingDate = new Date("2026-05-30T16:00:00+02:00");
+  const address = "Topkær Fest • Topkærvej 13, 8200 Århus N";
+
   return (
     <div>
       {/* Hero Section */}
@@ -6,17 +9,22 @@ export const Home = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 drop-shadow-lg">
-            Sarah & Michael
+            Lylian & Kasper
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 drop-shadow-md">
             We're getting married!
           </p>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-8">
             <p className="text-2xl md:text-3xl font-semibold text-white mb-2">
-              June 15, 2025
+              {weddingDate.toLocaleDateString("en-US", {
+                weekday: "long",
+                year: "numeric",
+                day: "numeric",
+                month: "long",
+              })}
             </p>
             <p className="text-lg md:text-xl text-white/90">
-              Garden Villa Estate • Napa Valley, CA
+              {address}
             </p>
           </div>
           <button className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
