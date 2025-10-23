@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router';
 import { useCountdown } from '../hooks/useCountdown'
 
 export const Home = () => {
@@ -30,9 +31,9 @@ export const Home = () => {
               {address}
             </p>
           </div>
-          <button className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
+          <Link to="/rsvp" className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
             RSVP Now
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -107,9 +108,9 @@ export const Home = () => {
             From our first bowling date to saying "yes" to forever, our journey
             has been filled with laughter, adventure, and endless love.
           </p>
-          <button className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-full font-semibold transition-colors">
+          <Link to='/about' className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-full font-semibold transition-colors">
             Read Our Story
-          </button>
+          </Link>
         </div>
       </section>
     </div>
