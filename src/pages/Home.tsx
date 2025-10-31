@@ -89,23 +89,74 @@ export const Home = () => {
       </section>
 
       {/* Quick Info Section */}
-      <section className="py-24 px-6 bg-gradient-to-br from-wedding-cream via-terracotta-50 to-blush-100">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-24 px-6 bg-gradient-to-br from-wedding-cream via-terracotta-50 to-blush-100 relative overflow-hidden">
+        {/* Background decorations */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-12 left-12 text-8xl text-terracotta-400 animate-pulse">
+            🌺
+          </div>
+          <div className="absolute top-32 right-16 text-6xl text-sage-400 animate-bounce delay-1000">
+            🌿
+          </div>
+          <div className="absolute bottom-24 left-20 text-7xl text-blush-400 animate-pulse delay-2000">
+            🌸
+          </div>
+          <div className="absolute bottom-12 right-12 text-5xl text-wedding-navy animate-bounce delay-3000">
+            💐
+          </div>
+          <div className="absolute top-1/2 left-8 text-4xl text-terracotta-300 animate-pulse delay-4000">
+            🦋
+          </div>
+          <div className="absolute top-1/3 right-8 text-3xl text-sage-300 animate-bounce delay-5000">
+            ✨
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-block mb-4">
-              <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-terracotta-400 to-transparent"></div>
+            <div className="inline-block mb-4 relative">
+              <div className="w-32 h-0.5 bg-gradient-to-r from-terracotta-200 via-terracotta-500 to-terracotta-200"></div>
+              <div className="absolute -left-6 -top-1 text-xs text-terracotta-400">
+                ❋
+              </div>
+              <div className="absolute -right-6 -top-1 text-xs text-terracotta-400">
+                ❋
+              </div>
             </div>
-            <h2 className="text-5xl font-serif font-light text-wedding-navy mb-4">
+            <h2 className="text-5xl font-serif font-light text-wedding-navy mb-4 relative">
               Wedding Details
+              <div className="absolute -top-4 -left-8 text-2xl text-terracotta-300/60 animate-pulse">
+                🌹
+              </div>
+              <div className="absolute -top-4 -right-8 text-2xl text-sage-300/60 animate-pulse delay-1000">
+                🌿
+              </div>
             </h2>
-            <div className="inline-block">
-              <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-terracotta-400 to-transparent"></div>
+            <div className="inline-block relative">
+              <div className="w-32 h-0.5 bg-gradient-to-r from-terracotta-200 via-terracotta-500 to-terracotta-200"></div>
+              <div className="absolute -left-6 -top-1 text-xs text-terracotta-400">
+                ❋
+              </div>
+              <div className="absolute -right-6 -top-1 text-xs text-terracotta-400">
+                ❋
+              </div>
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-10">
-            <div className="group bg-gradient-to-br from-white to-terracotta-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-terracotta-200 hover:border-terracotta-300">
-              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="group bg-gradient-to-br from-white to-terracotta-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-terracotta-200 hover:border-terracotta-300 relative overflow-hidden">
+              {/* Card decorative elements */}
+              <div className="absolute top-2 right-2 text-xs text-terracotta-200/50 animate-pulse">
+                ✨
+              </div>
+              <div className="absolute bottom-2 left-2 text-xs text-terracotta-200/30">
+                🌸
+              </div>
+
+              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300 relative">
                 💍
+                <div className="absolute -top-2 -right-2 text-lg text-terracotta-300/40 animate-bounce">
+                  ✦
+                </div>
               </div>
               <h3 className="text-2xl font-serif font-semibold text-wedding-navy mb-4">
                 Ceremony
@@ -120,9 +171,20 @@ export const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="group bg-gradient-to-br from-white to-sage-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-sage-200 hover:border-sage-300">
-              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="group bg-gradient-to-br from-white to-sage-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-sage-200 hover:border-sage-300 relative overflow-hidden">
+              {/* Card decorative elements */}
+              <div className="absolute top-2 right-2 text-xs text-sage-200/50 animate-pulse delay-1000">
+                ✨
+              </div>
+              <div className="absolute bottom-2 left-2 text-xs text-sage-200/30">
+                🌿
+              </div>
+
+              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300 relative">
                 🥂
+                <div className="absolute -top-2 -right-2 text-lg text-sage-300/40 animate-bounce delay-500">
+                  ✦
+                </div>
               </div>
               <h3 className="text-2xl font-serif font-semibold text-wedding-navy mb-4">
                 Reception
@@ -137,9 +199,20 @@ export const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="group bg-gradient-to-br from-white to-blush-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-blush-200 hover:border-blush-300">
-              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="group bg-gradient-to-br from-white to-blush-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-blush-200 hover:border-blush-300 relative overflow-hidden">
+              {/* Card decorative elements */}
+              <div className="absolute top-2 right-2 text-xs text-blush-200/50 animate-pulse delay-2000">
+                ✨
+              </div>
+              <div className="absolute bottom-2 left-2 text-xs text-blush-200/30">
+                🌸
+              </div>
+
+              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300 relative">
                 🏨
+                <div className="absolute -top-2 -right-2 text-lg text-blush-300/40 animate-bounce delay-1500">
+                  ✦
+                </div>
               </div>
               <h3 className="text-2xl font-serif font-semibold text-wedding-navy mb-4">
                 Accommodation
@@ -155,18 +228,51 @@ export const Home = () => {
 
       {/* Countdown Section */}
       <section className="py-24 bg-gradient-to-r from-sage-100 via-blush-100 to-terracotta-100 relative overflow-hidden">
-        {/* Background decoration */}
+        {/* Enhanced Background decoration */}
         <div className="absolute inset-0 opacity-15">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-sage-300 rounded-full blur-xl"></div>
-          <div className="absolute bottom-10 right-10 w-40 h-40 bg-terracotta-300 rounded-full blur-xl"></div>
+          <div className="absolute top-10 left-10 w-32 h-32 bg-sage-300 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-40 h-40 bg-terracotta-300 rounded-full blur-xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-20 w-24 h-24 bg-blush-300 rounded-full blur-lg animate-pulse delay-2000"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-28 h-28 bg-wedding-navy rounded-full blur-xl animate-pulse delay-3000"></div>
+        </div>
+
+        {/* Floating decorative elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-16 left-1/4 text-4xl text-terracotta-400 animate-bounce">
+            ⏰
+          </div>
+          <div className="absolute top-20 right-1/4 text-3xl text-sage-400 animate-pulse delay-1000">
+            ⭐
+          </div>
+          <div className="absolute bottom-16 left-1/3 text-2xl text-blush-400 animate-bounce delay-2000">
+            💕
+          </div>
+          <div className="absolute bottom-20 right-1/3 text-3xl text-wedding-navy animate-pulse delay-3000">
+            ✨
+          </div>
+          <div className="absolute top-1/2 left-12 text-xl text-terracotta-300 animate-bounce delay-4000">
+            💫
+          </div>
+          <div className="absolute top-1/3 right-12 text-2xl text-sage-300 animate-pulse delay-5000">
+            🌟
+          </div>
         </div>
 
         <div className="max-w-6xl mx-auto text-center px-6 relative z-10">
-          <h2 className="text-5xl font-serif font-light text-wedding-navy mb-6">
+          <h2 className="text-5xl font-serif font-light text-wedding-navy mb-6 relative">
             Counting Down to Our Big Day
+            <div className="absolute -top-6 -left-6 text-2xl text-terracotta-400/60 animate-pulse">
+              ⏳
+            </div>
+            <div className="absolute -top-6 -right-6 text-2xl text-sage-400/60 animate-bounce delay-1000">
+              ⏰
+            </div>
           </h2>
-          <p className="text-xl text-sage-600 mb-16 font-light">
+          <p className="text-xl text-sage-600 mb-16 font-light relative">
             Every second brings us closer to forever
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 text-sm text-terracotta-400/40">
+              💕
+            </div>
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
