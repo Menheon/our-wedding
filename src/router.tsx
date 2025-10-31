@@ -7,6 +7,7 @@ import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
 import { OurStory } from "./pages/OurStory";
 import { RSVP } from "./pages/RSVP";
+import { Gallery } from "./pages/Gallery";
 
 // Create the root route
 const rootRoute = createRootRoute({
@@ -29,7 +30,7 @@ const outStoryRoute = createRoute({
 const galleryRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/our-wedding/gallery",
-  component: () => <div>Photo Gallery - Coming Soon!</div>,
+  component: Gallery,
 });
 
 const rsvpRoute = createRoute({
