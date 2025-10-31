@@ -20,11 +20,13 @@ A beautiful, modern wedding website built with React 19, Vite, Tailwind CSS 4, a
 
 1. Clone or download this project
 2. Install dependencies:
+
    ```bash
    pnpm install
    ```
 
 3. Start the development server:
+
    ```bash
    pnpm dev
    ```
@@ -34,7 +36,7 @@ A beautiful, modern wedding website built with React 19, Vite, Tailwind CSS 4, a
 ### Available Scripts
 
 - `pnpm dev` - Start development server
-- `pnpm build` - Build for production  
+- `pnpm build` - Build for production
 - `pnpm preview` - Preview production build
 - `pnpm lint` - Run ESLint
 
@@ -43,14 +45,13 @@ A beautiful, modern wedding website built with React 19, Vite, Tailwind CSS 4, a
 ```
 src/
 ├── components/          # Reusable UI components
-│   └── Layout.tsx      # Main layout with navigation  
+│   └── Layout.tsx      # Main layout with navigation
 ├── pages/              # Route components
 │   ├── Home.tsx        # Landing page
 │   ├── About.tsx       # Our story page
 │   ├── RSVP.tsx        # RSVP form page
-│   ├── Gallery.tsx     # Photo gallery (coming soon)
+│   ├── Gallery.tsx     # Photo gallery
 │   ├── Registry.tsx    # Wedding registry (coming soon)
-│   └── Contact.tsx     # Contact information (coming soon)
 ├── router.tsx          # TanStack Router configuration
 ├── App.tsx            # Main app component
 ├── main.tsx           # Entry point

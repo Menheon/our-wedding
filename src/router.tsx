@@ -45,12 +45,6 @@ const registryRoute = createRoute({
   component: () => <div>Wedding Registry - Coming Soon!</div>,
 });
 
-const contactRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/our-wedding/contact",
-  component: () => <div>Contact Us - Coming Soon!</div>,
-});
-
 // Create the route tree
 const routeTree = rootRoute.addChildren([
   indexRoute,
@@ -58,7 +52,6 @@ const routeTree = rootRoute.addChildren([
   galleryRoute,
   rsvpRoute,
   registryRoute,
-  contactRoute,
 ]);
 
 // Create the router

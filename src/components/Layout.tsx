@@ -63,13 +63,6 @@ export const Layout = () => {
                 Registry
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
-              <Link
-                to="/our-wedding/contact"
-                className="text-gray-700 hover:text-rose-600 transition-colors font-medium"
-                activeProps={{ className: "text-rose-600 font-semibold" }}
-              >
-                Contact
-              </Link>
             </div>
           </div>
         </div>
