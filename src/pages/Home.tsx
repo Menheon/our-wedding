@@ -506,6 +506,151 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Wedding Registry Section */}
+      <section className="py-24 bg-gradient-to-br from-sage-50 via-wedding-cream to-terracotta-50 relative overflow-hidden">
+        {/* Background decorations */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-16 left-16 text-6xl text-terracotta-400 animate-pulse">
+            🎁
+          </div>
+          <div className="absolute top-32 right-20 text-5xl text-sage-400 animate-bounce delay-1000">
+            💝
+          </div>
+          <div className="absolute bottom-24 left-24 text-4xl text-blush-400 animate-pulse delay-2000">
+            🌸
+          </div>
+          <div className="absolute bottom-16 right-16 text-6xl text-wedding-navy animate-bounce delay-3000">
+            ✨
+          </div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
+          {/* Header */}
+          <div className="mb-16">
+            <div className="inline-block mb-6">
+              <div className="w-24 h-0.5 bg-gradient-to-r from-terracotta-300 via-terracotta-500 to-terracotta-300"></div>
+              <div className="absolute -left-6 -top-1 text-xs text-terracotta-400">
+                ❋
+              </div>
+              <div className="absolute -right-6 -top-1 text-xs text-terracotta-400">
+                ❋
+              </div>
+            </div>
+            <h2 className="text-5xl font-serif font-light text-wedding-navy mb-6 relative">
+              Wedding Registry
+              <div className="absolute -top-4 -left-8 text-2xl text-terracotta-300/60 animate-pulse">
+                🎁
+              </div>
+              <div className="absolute -top-4 -right-8 text-2xl text-sage-300/60 animate-pulse delay-1000">
+                💐
+              </div>
+            </h2>
+            <p className="text-xl text-sage-700 font-light max-w-3xl mx-auto">
+              Your presence is the greatest gift, but if you'd like to help us
+              build our new life together, we've created a wishlist
+            </p>
+          </div>
+
+          {/* Main Registry Card */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-12 border border-terracotta-200/50 relative overflow-hidden">
+              {/* Card decorative elements */}
+              <div className="absolute top-4 right-4 text-lg text-terracotta-200/40 animate-pulse">
+                ✨
+              </div>
+              <div className="absolute bottom-4 left-4 text-sm text-sage-200/40">
+                🌿
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                {/* Content */}
+                <div className="text-left">
+                  <h3 className="text-3xl font-serif font-semibold text-wedding-navy mb-6 flex items-center">
+                    <span className="mr-4 text-4xl">🏠</span>
+                    Our Ønskeskyen Registry
+                  </h3>
+                  <div className="space-y-4 text-sage-700 mb-8">
+                    <p className="text-lg">
+                      We've carefully selected items that will help us create
+                      our first home together as a married couple.
+                    </p>
+                    <div className="grid grid-cols-2 gap-3 text-sm">
+                      <div className="flex items-center">
+                        <span className="mr-2 text-terracotta-500">🍳</span>
+                        <span>Kitchen Essentials</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="mr-2 text-sage-500">🛏️</span>
+                        <span>Bedroom</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="mr-2 text-blush-500">🛋️</span>
+                        <span>Living Room</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="mr-2 text-wedding-navy">🌿</span>
+                        <span>Garden & Outdoor</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="space-y-4">
+                    <Link
+                      to="/our-wedding/registry"
+                      className="inline-flex items-center bg-gradient-to-r from-terracotta-500 to-wedding-navy hover:from-terracotta-600 hover:to-navy-900 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform group"
+                    >
+                      View Our Registry
+                      <svg
+                        className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </Link>
+                    <p className="text-sm text-sage-500">
+                      Includes QR code for easy mobile access
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Alternative Options */}
+              <div className="mt-12 pt-8 border-t border-sage-200/50">
+                <p className="text-lg text-wedding-navy font-medium mb-6">
+                  Alternative ways to celebrate with us:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  <div className="space-y-2">
+                    <div className="text-2xl">✈️</div>
+                    <span className="text-sage-600 font-medium">
+                      Honeymoon Fund
+                    </span>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-2xl">🏡</div>
+                    <span className="text-sage-600 font-medium">Home Fund</span>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-2xl">💕</div>
+                    <span className="text-sage-600 font-medium">
+                      Your Presence
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
