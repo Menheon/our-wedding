@@ -17,7 +17,7 @@ export const Layout = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-5">
             <Link
-              to="/"
+              to="/our-wedding"
               className="text-3xl font-script font-bold bg-gradient-to-r from-wedding-navy to-sage-600 bg-clip-text text-transparent hover:from-wedding-navy hover:to-terracotta-500 transition-all duration-300"
             >
               Lylian & Kasper

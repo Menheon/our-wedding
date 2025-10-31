@@ -163,7 +163,7 @@ export const Home = () => {
               </h3>
               <div className="space-y-2">
                 <p className="text-terracotta-600 font-semibold text-lg">
-                  2:00 PM
+                  3:00 PM
                 </p>
                 <p className="text-sage-600">Topkær Forest</p>
                 <p className="text-sm text-wedding-navy/70 mt-4">
@@ -187,11 +187,39 @@ export const Home = () => {
                 </div>
               </div>
               <h3 className="text-2xl font-serif font-semibold text-wedding-navy mb-4">
-                Reception
+                Cocktail hour
               </h3>
               <div className="space-y-2">
                 <p className="text-terracotta-600 font-semibold text-lg">
-                  3:00 PM
+                  4:00 PM
+                </p>
+                <p className="text-sage-600">Main Cottage Entrance</p>
+                <p className="text-sm text-wedding-navy/70 mt-4">
+                  Celebrate with welcome drinks, cake and good company
+                </p>
+              </div>
+            </div>
+            <div className="group bg-gradient-to-br from-white to-sage-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-sage-200 hover:border-sage-300 relative overflow-hidden">
+              {/* Card decorative elements */}
+              <div className="absolute top-2 right-2 text-xs text-sage-200/50 animate-pulse delay-1000">
+                ✨
+              </div>
+              <div className="absolute bottom-2 left-2 text-xs text-sage-200/30">
+                🌿
+              </div>
+
+              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300 relative">
+                🍽️
+                <div className="absolute -top-2 -right-2 text-lg text-sage-300/40 animate-bounce delay-500">
+                  ✦
+                </div>
+              </div>
+              <h3 className="text-2xl font-serif font-semibold text-wedding-navy mb-4">
+                Dinner & party
+              </h3>
+              <div className="space-y-2">
+                <p className="text-terracotta-600 font-semibold text-lg">
+                  6:00 PM
                 </p>
                 <p className="text-sage-600">Main Cottage</p>
                 <p className="text-sm text-wedding-navy/70 mt-4">
