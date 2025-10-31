@@ -8,6 +8,7 @@ import { Home } from "./pages/Home";
 import { OurStory } from "./pages/OurStory";
 import { RSVP } from "./pages/RSVP";
 import { Gallery } from "./pages/Gallery";
+import { Registry } from "./pages/Registry";
 
 // Create the root route
 const rootRoute = createRootRoute({
@@ -42,7 +43,7 @@ const rsvpRoute = createRoute({
 const registryRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/our-wedding/registry",
-  component: () => <div>Wedding Registry - Coming Soon!</div>,
+  component: Registry,
 });
 
 // Create the route tree
