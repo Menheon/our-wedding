@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { useState, useEffect } from "react";
 import ChapelProposingImg from "../assets/images/chapel-proposing-kneeling.png";
 import HillWalkingImg from "../assets/images/hill-walking.png";
 import HuggingSmilingImg from "../assets/images/hugging-smiling.png";
@@ -10,6 +11,16 @@ export const Home = () => {
   const weddingDate = new Date("2026-05-30T14:00:00+02:00");
   const address = "Topkær Fest • Topkærvej 13, 8200 Århus N";
   const timeRemaining = useCountdown(weddingDate);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div>
@@ -27,6 +38,10 @@ export const Home = () => {
           src={ChapelProposingImg}
           alt="Chapel Sitting"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
+          style={{
+            transform: `translateY(${scrollY * 0.1}px)`,
+            transition: "transform 0.1s ease-out",
+          }}
         />
 
         <div className="relative z-10 text-center px-6 pb-6 max-w-5xl mx-auto">
