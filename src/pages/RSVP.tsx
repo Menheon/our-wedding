@@ -2,23 +2,23 @@ export const RSVP = () => {
   const rsvpDate = new Date("2026-04-30T14:00:00+02:00");
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-25 to-purple-50 py-20 px-6">
+    <div className="min-h-screen bg-gradient-to-br from-wedding-cream via-blush-50 to-sage-50 py-20 px-6">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-6">
-            <div className="w-20 h-0.5 bg-gradient-to-r from-transparent via-rose-400 to-transparent"></div>
+            <div className="w-20 h-0.5 bg-gradient-to-r from-transparent via-terracotta-400 to-transparent"></div>
           </div>
-          <h1 className="text-6xl font-serif font-light text-gray-800 mb-8">
+          <h1 className="text-6xl font-serif font-light text-wedding-navy mb-8">
             RSVP
           </h1>
           <div className="max-w-2xl mx-auto">
-            <p className="text-2xl text-gray-700 font-light mb-6">
+            <p className="text-2xl text-sage-700 font-light mb-6">
               Please let us know if you'll be able to join us for our special
               day
             </p>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-rose-200 shadow-lg">
-              <p className="text-lg text-rose-600 font-semibold">
+            <div className="bg-wedding-cream/90 backdrop-blur-sm rounded-2xl p-6 border border-sage-200 shadow-lg">
+              <p className="text-lg text-terracotta-600 font-semibold">
                 Please respond by{" "}
                 {rsvpDate.toLocaleDateString("en-US", {
                   year: "numeric",
@@ -30,7 +30,7 @@ export const RSVP = () => {
           </div>
         </div>
 
-        <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-10 border border-rose-100">
+        <div className="bg-wedding-cream/95 backdrop-blur-sm rounded-3xl shadow-2xl p-10 border border-sage-200">
           <form className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
