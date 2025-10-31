@@ -1,5 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import ChapelSittingImg from "../assets/images/chapel-sitting-kissing.png";
+import ChapelProposingImg from "../assets/images/chapel-proposing-kneeling.png";
+import HillWalkingImg from "../assets/images/hill-walking.png";
+import HuggingSmilingImg from "../assets/images/hugging-smiling.png";
+import RingCloseUpImg from "../assets/images/ring-close-up.png";
+import DancingGreyImg from "../assets/images/dancing-grey.png";
 import { useCountdown } from "../hooks/useCountdown";
 
 export const Home = () => {
@@ -20,7 +24,7 @@ export const Home = () => {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-wedding-navy/40 via-transparent to-wedding-navy/20"></div>
         <img
-          src={ChapelSittingImg}
+          src={ChapelProposingImg}
           alt="Chapel Sitting"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
@@ -28,7 +32,7 @@ export const Home = () => {
         <div className="relative z-10 text-center px-6 pb-6 max-w-5xl mx-auto">
           {/* Elegant Title */}
           <div className="my-8">
-            <h1 className="font-windsong font-bold text-7xl md:text-9xl font-light text-white mb-4 tracking-wide drop-shadow-2xl">
+            <h1 className="font-script text-7xl md:text-9xl font-light text-white mb-4 tracking-wide drop-shadow-2xl">
               Lylian
               <span className="block text-5xl md:text-7xl font-normal italic opacity-90 mt-2">
                 &
@@ -224,6 +228,143 @@ export const Home = () => {
               />
             </svg>
           </Link>
+        </div>
+      </section>
+
+      {/* Photo Showcase Section */}
+      <section className="py-24 bg-gradient-to-br from-sage-50 via-wedding-cream to-blush-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-serif font-light text-wedding-navy mb-6">
+              Moments We Treasure
+            </h2>
+            <p className="text-xl text-sage-600 font-light">
+              From proposal to forever - our beautiful journey captured
+            </p>
+          </div>
+
+          {/* Featured Photo Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {/* The Proposal */}
+            <div className="group relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 lg:col-span-2">
+              <div className="aspect-video md:aspect-square lg:aspect-video overflow-hidden">
+                <img
+                  src={ChapelProposingImg}
+                  alt="The magical moment - Kasper proposing at the chapel"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-wedding-navy/80 via-transparent to-transparent">
+                <div className="absolute bottom-6 left-6 right-6">
+                  <h3 className="text-white text-2xl font-serif font-semibold mb-2">
+                    The Proposal
+                  </h3>
+                  <p className="text-white/90 text-lg">
+                    Where it all began - the most magical "yes" moment
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Ring Close-up */}
+            <div className="group relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={RingCloseUpImg}
+                  alt="Beautiful engagement ring close-up"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-terracotta-600/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-white text-xl font-serif font-semibold mb-1">
+                    The Ring
+                  </h3>
+                  <p className="text-white/90">Symbol of our eternal love</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Happy Moment */}
+            <div className="group relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={HuggingSmilingImg}
+                  alt="Pure joy and happiness"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-sage-600/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-white text-xl font-serif font-semibold mb-1">
+                    Pure Joy
+                  </h3>
+                  <p className="text-white/90">Celebrating our engagement</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Dancing (Artistic) */}
+            <div className="group relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={DancingGreyImg}
+                  alt="Dancing together (artistic)"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-wedding-navy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-white text-xl font-serif font-semibold mb-1">
+                    Dancing
+                  </h3>
+                  <p className="text-white/90">Lost in each other</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Walking Together */}
+            <div className="group relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={HillWalkingImg}
+                  alt="Walking together into our future"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-terracotta-600/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-white text-xl font-serif font-semibold mb-1">
+                    Our Journey
+                  </h3>
+                  <p className="text-white/90">Walking into forever</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center">
+            <Link
+              to="/our-wedding/gallery"
+              className="inline-flex items-center bg-gradient-to-r from-terracotta-500 to-wedding-navy hover:from-terracotta-600 hover:to-navy-900 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-terracotta-500/25 hover:scale-105 transform group"
+            >
+              View Full Gallery
+              <svg
+                className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
