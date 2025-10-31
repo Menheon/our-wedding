@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Import all your proposal photos
 import chapelProposingKneeling from "../assets/images/chapel-proposing-kneeling.png";
@@ -142,6 +142,20 @@ export const Gallery = () => {
   >("all");
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
 
+  // Prevent body scroll when modal is open
+  useEffect(() => {
+    if (selectedPhoto) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    // Cleanup function to restore scroll when component unmounts
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [selectedPhoto]);
+
   const filteredPhotos =
     selectedCategory === "all"
       ? photos
@@ -224,18 +238,19 @@ export const Gallery = () => {
       {/* Lightbox Modal */}
       {selectedPhoto && (
         <div
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 overflow-hidden"
           onClick={() => setSelectedPhoto(null)}
         >
-          <div className="relative max-w-4xl max-h-full">
+          <div className="relative w-full h-full flex items-center justify-center">
             <img
               src={selectedPhoto.src}
               alt={selectedPhoto.alt}
-              className="max-w-full max-h-full object-contain rounded-lg"
+              className="max-w-[90vw] max-h-[90vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
             />
             <button
               onClick={() => setSelectedPhoto(null)}
-              className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 text-white hover:bg-white/30 transition-colors"
+              className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 text-white hover:bg-white/30 transition-colors z-10"
             >
               <svg
                 className="w-6 h-6"
@@ -251,8 +266,8 @@ export const Gallery = () => {
                 />
               </svg>
             </button>
-            <div className="absolute bottom-4 left-4 right-4 text-center">
-              <p className="text-white text-lg font-medium bg-black/50 backdrop-blur-sm rounded-lg p-4">
+            <div className="absolute bottom-4 left-4 right-4 text-center z-10">
+              <p className="text-white text-lg font-medium bg-black/60 backdrop-blur-sm rounded-lg p-4 max-w-2xl mx-auto">
                 {selectedPhoto.alt}
               </p>
             </div>
