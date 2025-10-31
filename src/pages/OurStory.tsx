@@ -1,6 +1,8 @@
 import streetsWalkingImg from "../assets/images/streets-walking-holding-hands.png";
 import chapelStandingImg from "../assets/images/chapel-standing-head-to-head.png";
 import sittingLookingOutImg from "../assets/images/sitting-looking-out.png";
+import chapelProposingKneeling from "../assets/images/chapel-proposing-kneeling.png";
+import hillWalkingHandInHand from "../assets/images/hill-walking.png";
 
 export const OurStory = () => {
   return (
@@ -24,17 +26,72 @@ export const OurStory = () => {
               How We Met
             </h2>
             <p className="text-lg text-sage-700 leading-relaxed">
-              Our love story began at a local bowling alley on a Friday evening.
-              Lylian was there with friends, and Kasper couldn't help but notice
-              her competitive spirit and infectious laughter after each strike.
-              After gathering the courage to approach her, what started as a
-              friendly bowling challenge turned into hours of conversation and
-              the beginning of something beautiful.
+              Our international love story began on Happn, a dating app that
+              brought together a Brazilian beauty and a charming Dane. Kasper,
+              wanting to catch Lylian's attention, decided to be bold and wrote
+              his very first message in Portuguese:
+              <span className="mx-1 italic font-semibold text-terracotta-600">
+                "Boa tarde, tudo bem!"
+              </span>
+              It worked like a charm, and that simple greeting sparked what
+              would become the most beautiful adventure of our lives.
             </p>
           </div>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img
               src={streetsWalkingImg}
+              alt="Lylian and Kasper walking hand in hand"
+              className="w-full h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-wedding-navy/20 to-transparent"></div>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl order-2 md:order-1">
+            <img
+              src={sittingLookingOutImg}
+              alt="Lylian and Kasper enjoying a peaceful moment together"
+              className="w-full h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-blush-300/30 to-transparent"></div>
+          </div>
+          <div className="space-y-6 order-1 md:order-2">
+            <h2 className="text-4xl font-serif font-semibold text-wedding-navy">
+              Our First Date
+            </h2>
+            <p className="text-lg text-sage-700 leading-relaxed">
+              Our first meeting in person was at a bowling alley, and it was
+              absolutely perfect. Lylian showed off her competitive side and
+              completely beat Kasper - but he didn't mind losing to someone so
+              amazing! When it was time to say goodbye, Kasper had practiced
+              something special. He looked into her eyes and said
+              <span className="mx-1 italic font-semibold text-terracotta-600">
+                "Boa noite, moça bonita"
+              </span>
+              (Good night, beautiful girl).
+            </p>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
+          <div className="space-y-6">
+            <h2 className="text-4xl font-serif font-semibold text-wedding-navy">
+              Second Date Magic
+            </h2>
+            <p className="text-lg text-sage-700 leading-relaxed">
+              For our second date, we went to the beach. Kasper was incredibly
+              nervous, but there was something magical about sitting by the
+              water, sharing a few beers, and getting to know each other better.
+              The ocean breeze, the sunset, and endless conversation created the
+              perfect atmosphere. By the end of the evening, we shared our first
+              kiss - and we both knew this was the beginning of something
+              extraordinary.
+            </p>
+          </div>
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <img
+              src={hillWalkingHandInHand}
               alt="Lylian and Kasper walking hand in hand"
               className="w-full h-80 object-cover"
             />
@@ -53,15 +110,15 @@ export const OurStory = () => {
           </div>
           <div className="space-y-6 order-1 md:order-2">
             <h2 className="text-4xl font-serif font-semibold text-wedding-navy">
-              The Proposal
+              The Cheeky Third Date
             </h2>
             <p className="text-lg text-sage-700 leading-relaxed">
-              After two beautiful years together, Kasper knew Lylian was the
-              one. He planned the perfect proposal at the charming chapel where
-              we had shared so many meaningful moments and conversations about
-              our future. As the golden hour light filtered through the windows,
-              he got down on one knee and asked the most important question of
-              his life.
+              Our third date took us to the deer park, where Kasper had a plan.
+              In what can only be described as the most cheeky and cringy (but
+              adorable) move ever, he tricked Lylian into holding his hand! It
+              was so perfectly Kasper - sweet, a little silly, but absolutely
+              charming. From that moment, we knew we were meant to hold hands
+              for the rest of our lives.
             </p>
           </div>
         </div>
@@ -69,22 +126,24 @@ export const OurStory = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
             <h2 className="text-4xl font-serif font-semibold text-wedding-navy">
-              Our Journey Continues
+              The Proposal in Paradise
             </h2>
             <p className="text-lg text-sage-700 leading-relaxed">
-              From that first bowling encounter to quiet moments of reflection,
-              every step of our journey has brought us closer together. We've
-              learned to support each other's dreams, laugh at life's surprises,
-              and find joy in both grand adventures and peaceful quiet moments.
+              On September 2nd, 2025, Kasper planned the most romantic proposal
+              on the beautiful island of Santorini, Greece. High atop a chapel
+              with breathtaking views of the Aegean Sea, he got down on one
+              knee. He had asked for Lylian's mother's blessing beforehand in
+              portuguese. The combination of the stunning Greek sunset, the
+              meaningful location, and Kasper's thoughtful gesture made it
+              absolutely perfect.
             </p>
           </div>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src={sittingLookingOutImg}
-              alt="Lylian and Kasper enjoying a peaceful moment together"
+              src={chapelProposingKneeling}
+              alt="Kasper proposing to Lylian in Santorini"
               className="w-full h-80 object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-blush-300/30 to-transparent"></div>
           </div>
         </div>
 
