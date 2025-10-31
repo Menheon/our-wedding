@@ -49,8 +49,8 @@ export const Home = () => {
           </p>
 
           {/* Elegant Info Card */}
-          <div className="bg-wedding-cream/20 backdrop-blur-lg border border-sage-200/30 rounded-2xl p-8 mb-12 shadow-2xl">
-            <p className="text-3xl md:text-4xl font-serif font-semibold text-white mb-4">
+          <div className="bg-gradient-to-br from-wedding-cream/30 to-terracotta-100/30 backdrop-blur-lg border border-terracotta-200/40 rounded-2xl p-8 mb-12 shadow-2xl">
+            <p className="text-3xl md:text-4xl font-serif font-semibold text-white mb-4 drop-shadow-lg">
               {weddingDate.toLocaleDateString("en-US", {
                 weekday: "long",
                 year: "numeric",
@@ -58,7 +58,7 @@ export const Home = () => {
                 month: "long",
               })}
             </p>
-            <p className="text-xl md:text-2xl text-white/90 font-light">
+            <p className="text-xl md:text-2xl text-white/95 font-light drop-shadow-md">
               {address}
             </p>
           </div>
@@ -74,13 +74,21 @@ export const Home = () => {
       </section>
 
       {/* Quick Info Section */}
-      <section className="py-24 px-6 bg-wedding-cream">
+      <section className="py-24 px-6 bg-gradient-to-br from-wedding-cream via-terracotta-50 to-blush-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-serif font-light text-center text-wedding-navy mb-16">
-            Wedding Details
-          </h2>
+          <div className="text-center mb-16">
+            <div className="inline-block mb-4">
+              <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-terracotta-400 to-transparent"></div>
+            </div>
+            <h2 className="text-5xl font-serif font-light text-wedding-navy mb-4">
+              Wedding Details
+            </h2>
+            <div className="inline-block">
+              <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-terracotta-400 to-transparent"></div>
+            </div>
+          </div>
           <div className="grid md:grid-cols-3 gap-10">
-            <div className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-sage-200">
+            <div className="group bg-gradient-to-br from-white to-terracotta-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-terracotta-200 hover:border-terracotta-300">
               <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 💍
               </div>
@@ -97,7 +105,7 @@ export const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-sage-200">
+            <div className="group bg-gradient-to-br from-white to-sage-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-sage-200 hover:border-sage-300">
               <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 🥂
               </div>
@@ -114,7 +122,7 @@ export const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-sage-200">
+            <div className="group bg-gradient-to-br from-white to-blush-50 backdrop-blur-sm rounded-2xl shadow-xl p-10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-blush-200 hover:border-blush-300">
               <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 🏨
               </div>
@@ -147,35 +155,35 @@ export const Home = () => {
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="bg-wedding-cream/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-sage-200 hover:scale-105 transition-transform duration-300">
-              <div className="text-5xl font-serif font-bold bg-gradient-to-r from-wedding-navy to-terracotta-500 bg-clip-text text-transparent mb-2">
+            <div className="bg-gradient-to-br from-wedding-cream to-terracotta-50 backdrop-blur-sm rounded-3xl p-8 shadow-xl border-2 border-terracotta-200 hover:border-terracotta-300 hover:scale-105 transition-all duration-300">
+              <div className="text-5xl font-serif font-bold bg-gradient-to-r from-terracotta-600 to-wedding-navy bg-clip-text text-transparent mb-2">
                 {timeRemaining.days}
               </div>
-              <div className="text-sage-600 font-medium tracking-wide uppercase text-sm">
+              <div className="text-terracotta-600 font-medium tracking-wide uppercase text-sm">
                 Days
               </div>
             </div>
-            <div className="bg-wedding-cream/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-sage-200 hover:scale-105 transition-transform duration-300">
-              <div className="text-5xl font-serif font-bold bg-gradient-to-r from-wedding-navy to-terracotta-500 bg-clip-text text-transparent mb-2">
+            <div className="bg-gradient-to-br from-wedding-cream to-sage-50 backdrop-blur-sm rounded-3xl p-8 shadow-xl border-2 border-sage-200 hover:border-sage-300 hover:scale-105 transition-all duration-300">
+              <div className="text-5xl font-serif font-bold bg-gradient-to-r from-sage-600 to-terracotta-500 bg-clip-text text-transparent mb-2">
                 {timeRemaining.hours}
               </div>
               <div className="text-sage-600 font-medium tracking-wide uppercase text-sm">
                 Hours
               </div>
             </div>
-            <div className="bg-wedding-cream/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-sage-200 hover:scale-105 transition-transform duration-300">
-              <div className="text-5xl font-serif font-bold bg-gradient-to-r from-wedding-navy to-terracotta-500 bg-clip-text text-transparent mb-2">
+            <div className="bg-gradient-to-br from-wedding-cream to-blush-50 backdrop-blur-sm rounded-3xl p-8 shadow-xl border-2 border-blush-200 hover:border-blush-300 hover:scale-105 transition-all duration-300">
+              <div className="text-5xl font-serif font-bold bg-gradient-to-r from-blush-500 to-terracotta-600 bg-clip-text text-transparent mb-2">
                 {timeRemaining.minutes}
               </div>
-              <div className="text-sage-600 font-medium tracking-wide uppercase text-sm">
+              <div className="text-blush-600 font-medium tracking-wide uppercase text-sm">
                 Minutes
               </div>
             </div>
-            <div className="bg-wedding-cream/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-sage-200 hover:scale-105 transition-transform duration-300">
-              <div className="text-5xl font-serif font-bold bg-gradient-to-r from-wedding-navy to-terracotta-500 bg-clip-text text-transparent mb-2">
+            <div className="bg-gradient-to-br from-wedding-cream to-terracotta-100 backdrop-blur-sm rounded-3xl p-8 shadow-xl border-2 border-terracotta-300 hover:border-terracotta-400 hover:scale-105 transition-all duration-300">
+              <div className="text-5xl font-serif font-bold bg-gradient-to-r from-terracotta-600 to-wedding-navy bg-clip-text text-transparent mb-2">
                 {timeRemaining.seconds}
               </div>
-              <div className="text-sage-600 font-medium tracking-wide uppercase text-sm">
+              <div className="text-terracotta-600 font-medium tracking-wide uppercase text-sm">
                 Seconds
               </div>
             </div>
@@ -184,34 +192,44 @@ export const Home = () => {
       </section>
 
       {/* Love Story Preview */}
-      <section className="py-24 px-6 bg-wedding-cream">
-        <div className="max-w-5xl mx-auto text-center">
+      <section className="py-24 px-6 bg-gradient-to-r from-terracotta-100 via-wedding-cream to-blush-100 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-10 w-40 h-40 bg-terracotta-300 rounded-full blur-2xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-32 h-32 bg-blush-300 rounded-full blur-xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-sage-300 rounded-full blur-lg animate-pulse delay-2000"></div>
+        </div>
+
+        <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="mb-12">
             <div className="inline-block">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-terracotta-400 to-transparent mb-6"></div>
+              <div className="w-20 h-0.5 bg-gradient-to-r from-terracotta-300 via-terracotta-500 to-terracotta-300 mb-6"></div>
             </div>
             <h2 className="text-5xl font-serif font-light text-wedding-navy mb-6">
               Our Love Story
             </h2>
             <div className="inline-block">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-terracotta-400 to-transparent"></div>
+              <div className="w-20 h-0.5 bg-gradient-to-r from-terracotta-300 via-terracotta-500 to-terracotta-300"></div>
             </div>
           </div>
 
-          <div className="max-w-3xl mx-auto mb-12">
+          <div className="max-w-3xl mx-auto mb-12 bg-white/60 backdrop-blur-sm rounded-3xl p-8 border border-terracotta-200/50">
             <p className="text-xl text-sage-700 leading-relaxed font-light">
-              From our first bowling date to saying "yes" to forever, our
-              journey has been filled with laughter, adventure, and endless
-              love.
+              From our first "Boa tarde, tudo bem!" on Happn to saying "yes" to
+              forever in Santorini, our journey has been filled with laughter,
+              adventure, Portuguese sweet nothings, and endless love.
             </p>
-            <p className="text-2xl text-terracotta-500 mt-4 italic font-script">
-              "Two hearts, one story, countless memories yet to be made..."
+            <p className="text-2xl text-terracotta-600 mt-6 italic font-script font-semibold">
+              "Dois corações, uma história, inúmeras memórias por fazer..."
+            </p>
+            <p className="text-sm text-terracotta-500 mt-2 opacity-80">
+              (Two hearts, one story, countless memories yet to be made...)
             </p>
           </div>
 
           <Link
             to="/our-wedding/our-story"
-            className="inline-flex items-center bg-gradient-to-r from-wedding-navy to-sage-600 hover:from-navy-900 hover:to-sage-700 text-white px-10 py-4 rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-sage-500/25 hover:scale-105 transform group"
+            className="inline-flex items-center bg-gradient-to-r from-terracotta-500 to-wedding-navy hover:from-terracotta-600 hover:to-navy-900 text-white px-10 py-4 rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-terracotta-500/25 hover:scale-105 transform group"
           >
             Read Our Story
             <svg
