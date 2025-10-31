@@ -84,7 +84,9 @@ export const Home = () => {
                 Ceremony
               </h3>
               <div className="space-y-2">
-                <p className="text-terracotta-600 font-semibold text-lg">2:00 PM</p>
+                <p className="text-terracotta-600 font-semibold text-lg">
+                  2:00 PM
+                </p>
                 <p className="text-sage-600">Topkær Forest</p>
                 <p className="text-sm text-wedding-navy/70 mt-4">
                   Join us as we exchange vows surrounded by nature's beauty
@@ -99,7 +101,9 @@ export const Home = () => {
                 Reception
               </h3>
               <div className="space-y-2">
-                <p className="text-terracotta-600 font-semibold text-lg">3:00 PM</p>
+                <p className="text-terracotta-600 font-semibold text-lg">
+                  3:00 PM
+                </p>
                 <p className="text-sage-600">Main Cottage</p>
                 <p className="text-sm text-wedding-navy/70 mt-4">
                   Celebrate with dinner, dancing, and unforgettable moments
