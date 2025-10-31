@@ -61,7 +61,7 @@ export const Home = () => {
 
           {/* CTA Button */}
           <Link
-            to="/rsvp"
+            to="/our-wedding/rsvp"
             className="inline-block bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white px-12 py-4 rounded-full text-xl font-semibold transition-all duration-300 shadow-2xl hover:shadow-rose-500/25 hover:scale-105 transform"
           >
             RSVP Now ✨
@@ -202,7 +202,7 @@ export const Home = () => {
           </div>
 
           <Link
-            to="/our-story"
+            to="/our-wedding/our-story"
             className="inline-flex items-center bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white px-10 py-4 rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-rose-500/25 hover:scale-105 transform group"
           >
             Read Our Story

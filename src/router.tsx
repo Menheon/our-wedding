@@ -16,37 +16,37 @@ const rootRoute = createRootRoute({
 // Create the index route
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/",
+  path: "/our-wedding",
   component: Home,
 });
 
 const outStoryRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/our-story",
+  path: "/our-wedding/our-story",
   component: OurStory,
 });
 
 const galleryRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/gallery",
+  path: "/our-wedding/gallery",
   component: () => <div>Photo Gallery - Coming Soon!</div>,
 });
 
 const rsvpRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/rsvp",
+  path: "/our-wedding/rsvp",
   component: RSVP,
 });
 
 const registryRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/registry",
+  path: "/our-wedding/registry",
   component: () => <div>Wedding Registry - Coming Soon!</div>,
 });
 
 const contactRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/contact",
+  path: "/our-wedding/contact",
   component: () => <div>Contact Us - Coming Soon!</div>,
 });
 

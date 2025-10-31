@@ -1,5 +1,4 @@
 import { Outlet, Link } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 import { useEffect } from "react";
 import { useLocation } from "@tanstack/react-router";
 
@@ -25,7 +24,7 @@ export const Layout = () => {
             </Link>
             <div className="hidden md:flex space-x-10">
               <Link
-                to="/"
+                to="/our-wedding"
                 className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
@@ -33,7 +32,7 @@ export const Layout = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
-                to="/our-story"
+                to="/our-wedding/our-story"
                 className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
@@ -41,7 +40,7 @@ export const Layout = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
-                to="/gallery"
+                to="/our-wedding/gallery"
                 className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
@@ -49,7 +48,7 @@ export const Layout = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
-                to="/rsvp"
+                to="/our-wedding/rsvp"
                 className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
@@ -57,7 +56,7 @@ export const Layout = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
-                to="/registry"
+                to="/our-wedding/registry"
                 className="relative text-gray-600 hover:text-rose-600 transition-all duration-300 font-medium text-lg group"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
@@ -65,7 +64,7 @@ export const Layout = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link
-                to="/contact"
+                to="/our-wedding/contact"
                 className="text-gray-700 hover:text-rose-600 transition-colors font-medium"
                 activeProps={{ className: "text-rose-600 font-semibold" }}
               >
@@ -99,9 +98,6 @@ export const Layout = () => {
           </div>
         </div>
       </footer>
-
-      {/* Router Devtools */}
-      <TanStackRouterDevtools />
     </div>
   );
 };
