@@ -58,9 +58,95 @@ src/
 └── index.css          # Global styles with Tailwind
 ```
 
+## 📧 RSVP Email Setup
+
+Since you're using **GitHub Pages**, here are the best options for email integration:
+
+### Option 1: Formspree (Recommended for GitHub Pages)
+
+Perfect for static sites on GitHub Pages! The form is already configured with proper field names.
+
+**Setup Steps:**
+
+1. Sign up at [formspree.io](https://formspree.io) (free tier: 50 submissions/month)
+2. Create a new form and get your form endpoint
+3. Update the form action in `src/pages/RSVP.tsx`:
+   ```tsx
+   <form
+     action="https://formspree.io/f/YOUR_FORM_ID"
+     method="POST"
+     className="space-y-8"
+   >
+   ```
+4. Remove the Netlify-specific attributes:
+   - Remove `data-netlify="true"`
+   - Remove `netlify-honeypot="bot-field"`
+   - Keep the honeypot field for spam protection
+
+**Benefits:**
+
+- ✅ Works perfectly with GitHub Pages
+- ✅ Emails sent directly to kasper.d.borg@gmail.com
+- ✅ Built-in spam protection
+- ✅ Form submissions dashboard
+- ✅ Free tier available
+
+### Option 2: EmailJS (Client-side only)
+
+**No backend needed - sends emails directly from the browser!**
+
+**Setup Steps:**
+
+1. Sign up at [emailjs.com](https://emailjs.com) (free tier: 200 emails/month)
+2. Create email service (connect your Gmail)
+3. Install EmailJS: `pnpm add @emailjs/browser`
+4. Replace the form with EmailJS integration
+
+**Benefits:**
+
+- ✅ Works perfectly with GitHub Pages
+- ✅ No server required
+- ✅ Send emails directly from your Gmail account
+- ✅ Custom email templates
+
+### Option 3: Web3Forms (Alternative)
+
+**Another great option for static sites:**
+
+1. Sign up at [web3forms.com](https://web3forms.com) (free: unlimited submissions)
+2. Get your access key
+3. Update form action to `https://api.web3forms.com/submit`
+4. Add access key as hidden input
+
+### Option 4: Netlify Forms (If you want to switch)
+
+You could deploy to Netlify instead of GitHub Pages - the form is already configured for this.
+
+### Option 5: Custom Backend (Advanced)
+
+Build a Node.js/Express backend with:
+
+- Gmail API or Nodemailer for sending emails
+- Deploy to Vercel, Railway, or similar platform
+
 ## 🎨 Customization
 
 ### Content
+
+- Update wedding details in `Home.tsx`
+- Modify the love story in `OurStory.tsx`
+- Add your photos to `src/assets/images/`
+- Update contact information in `RSVP.tsx`
+
+### Colors
+
+The wedding color palette is defined in `tailwind.config.js`:
+
+- Navy: `#215076`
+- Sage: `#708F7B`
+- Terracotta: `#CF9D85`
+- Blush: `#F1CBBC`
+- Cream: `#FFFAF3`
 
 ## 🛠 Technology Stack
 

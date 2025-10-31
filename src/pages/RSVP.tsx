@@ -42,36 +42,25 @@ export const RSVP = () => {
         </div>
 
         <div className="bg-white/95 rounded-3xl shadow-2xl p-10 border border-terracotta-200/50">
-          <form className="space-y-8">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-semibold text-wedding-navy mb-3 tracking-wide uppercase">
-                  First Name *
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-5 py-4 border border-sage-200 rounded-xl focus:ring-2 focus:ring-terracotta-400 focus:border-terracotta-300 transition-all duration-300 bg-wedding-cream/50 focus:bg-white shadow-sm"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-wedding-navy mb-3 tracking-wide uppercase">
-                  Last Name *
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-5 py-4 border border-sage-200 rounded-xl focus:ring-2 focus:ring-terracotta-400 focus:border-terracotta-300 transition-all duration-300 bg-wedding-cream/50 focus:bg-white shadow-sm"
-                  required
-                />
-              </div>
+          <form
+            action="https://formspree.io/f/xovpkbjo"
+            method="POST"
+            className="space-y-8"
+          >
+            {/* Honeypot field for spam protection */}
+            <div className="hidden">
+              <label>
+                Don't fill this out if you're human: <input name="_gotcha" />
+              </label>
             </div>
 
-            <div>
+            <div className="grid gap-6">
               <label className="block text-sm font-semibold text-wedding-navy mb-3 tracking-wide uppercase">
-                Email Address *
+                Name *
               </label>
               <input
-                type="email"
+                type="text"
+                name="name"
                 className="w-full px-5 py-4 border border-sage-200 rounded-xl focus:ring-2 focus:ring-terracotta-400 focus:border-terracotta-300 transition-all duration-300 bg-wedding-cream/50 focus:bg-white shadow-sm"
                 required
               />
@@ -111,7 +100,10 @@ export const RSVP = () => {
               <label className="block text-sm font-semibold text-wedding-navy mb-3 tracking-wide uppercase">
                 Number of Guests
               </label>
-              <select className="w-full px-5 py-4 border border-sage-200 rounded-xl focus:ring-2 focus:ring-terracotta-400 focus:border-terracotta-300 transition-all duration-300 bg-wedding-cream/50 focus:bg-white shadow-sm">
+              <select
+                name="numberOfGuests"
+                className="w-full px-5 py-4 border border-sage-200 rounded-xl focus:ring-2 focus:ring-terracotta-400 focus:border-terracotta-300 transition-all duration-300 bg-wedding-cream/50 focus:bg-white shadow-sm"
+              >
                 <option value="1">Just me</option>
                 <option value="2">My partner and I</option>
               </select>
@@ -122,6 +114,7 @@ export const RSVP = () => {
                 Dietary Restrictions
               </label>
               <textarea
+                name="dietaryRestrictions"
                 className="w-full px-5 py-4 border border-sage-200 rounded-xl focus:ring-2 focus:ring-terracotta-400 focus:border-terracotta-300 transition-all duration-300 bg-wedding-cream/50 focus:bg-white shadow-sm resize-none"
                 rows={3}
                 placeholder="Please let us know about any allergies or dietary requirements"
@@ -133,6 +126,7 @@ export const RSVP = () => {
                 Special Message for the Couple
               </label>
               <textarea
+                name="specialMessage"
                 className="w-full px-5 py-4 border border-sage-200 rounded-xl focus:ring-2 focus:ring-terracotta-400 focus:border-terracotta-300 transition-all duration-300 bg-wedding-cream/50 focus:bg-white shadow-sm resize-none"
                 rows={4}
                 placeholder="Share your well wishes, memories, or anything else you'd like to say!"
