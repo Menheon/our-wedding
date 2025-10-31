@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import ChapelSittingImg from "../assets/images/chapel-sitting.png";
+import ChapelSittingImg from "../assets/images/chapel-sitting-kissing.png";
 import { useCountdown } from "../hooks/useCountdown";
 
 export const Home = () => {
